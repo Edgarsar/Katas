@@ -19,8 +19,28 @@ const generateBoard = function (whiteQueen, blackQueen) {
 
 }
 
+const queenThreat = function (generatedBoard) {
 
+  //find the positions of both queens
+  const queenPositions = [];
+  queenPositions.push(whiteQueen, blackQueen);
+
+
+  if (queenPositions[0][1] === queenPositions[1][1])
+    return true; //same column
+  if (queenPositions[0][0] === queenPositions[1][0])
+    return true; //same row
+
+  //calculate the slope
+  let rise = queenPositions[0][0] - queenPositions[1][0];
+
+  let rum = queenPositions[0][1] - queenPositions[1][1];
+
+
+  if (Math.abs(rise / rum) === 1) return true; //if the absolute value of the slope is 1
+  return false;
+};
 
 let generatedBoard = generateBoard(whiteQueen, blackQueen);
-// console.log(generatedBoard);
+console.log(generatedBoard);
 console.log(queenThreat(generatedBoard));
