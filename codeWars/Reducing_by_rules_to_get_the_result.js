@@ -22,11 +22,10 @@ The list of numbers will always contain more than 1 numbers.
 In the list of numbers will only be values greater than 0.
 Every rule takes always two input parameter. */
 
-function reduceByRules(numbers, rules)
-{
-return numbers.reduce(function(prev,curr,index) {
-  return rules[(index-1)%rules.length](prev,curr);
-})
+function reduceByRules(numbers, rules) {
+  return numbers.reduce(function (prev, curr, index) {
+    return rules[(index - 1) % rules.length](prev, curr);
+  })
 }
 
 let rules = [(a, b) => a + b,
