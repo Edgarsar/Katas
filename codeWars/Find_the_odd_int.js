@@ -19,13 +19,10 @@ const findOdd = (arr) => {
   }, {});
 
   for (const el of arr) {
-
     if (obj[el] % 2 !== 0) {
       return el;
     }
-
   }
-
 };
 
 console.log(findOdd([7], 7));
