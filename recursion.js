@@ -62,7 +62,21 @@ function sumItems(array) {
 
 }
 
-console.log(sumItems([25])) // output 25
-console.log(sumItems([1, 3, 3, 5, 5])) // output 17
-console.log(sumItems([[1, 2, [[3], 4]], 5, []])) // output 15
-console.log(sumItems([[[5], [[[4]]], [[3], 2]], 1, []])) // output 15
+// console.log(sumItems([25])) // output 25
+// console.log(sumItems([1, 3, 3, 5, 5])) // output 17
+// console.log(sumItems([[1, 2, [[3], 4]], 5, []])) // output 15
+// console.log(sumItems([[[5], [[[4]]], [[3], 2]], 1, []])) // output 15
+
+// Math.pow() recursive function
+
+function pow(a, b) {
+  if (b === 0) {
+    return 1
+  }
+  else {
+    return a * pow(a, b - 1)
+  }
+
+}
+
+console.log(pow(5, 3)) // output 3
