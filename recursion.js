@@ -34,4 +34,16 @@ const printItems = function (array) {
   });
 }
 
-console.log(printItems(["A", ["B", "C"], ["U", ["I", ["O", "Y"]], "L"], "D", "E"]))
+// console.log(printItems(["A", ["B", "C"], ["U", ["I", ["O", "Y"]], "L"], "D", "E"]))
+
+
+// sums all the whole numbers from fromN to toN.  it would sum 3 + 4 + 5 + 6 + 7 and output 25.
+
+function sum(fromN, toN) {
+  if (toN === fromN) {
+    return fromN
+  }
+  return toN + sum(fromN, toN - 1)
+}
+
+console.log(sum(3, 7));
