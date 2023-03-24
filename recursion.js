@@ -8,3 +8,15 @@ function countEvenToTwelve(number) {
 }
 
 countEvenToTwelve(0);
+
+
+// return the sum of every whole number from n down to 1
+
+function sumtoOne(n) {
+if (n===1){
+  return 1
+}
+  return n + sumtoOne(n-1)
+}
+
+console.log(sumtoOne(4))
