@@ -79,4 +79,19 @@ function pow(a, b) {
 
 }
 
-console.log(pow(5, 3)) // output 3
+// console.log(pow(5, 3)) // output 3
+
+
+// reverse string using recursion
+
+function reverseStr(str) {
+  if (str.length === 0) {
+    return ""
+  }
+  else {
+    return reverseStr(str.substring(1)) + str.charAt(0)
+  }
+}
+
+console.log(reverseStr("reverse string using recursion..."))
+
