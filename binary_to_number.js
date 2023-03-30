@@ -16,9 +16,9 @@ const toNumber = (binaryStr) => {
     .reverse()
     .map((e, i) =>
       e === "1" ? 2 ** i : 0)
-    .reduce((aggr, val) => aggr + val)
-}
+    .reduce((aggr, val) => aggr + val);
+};
 
 console.log(toNumber("101"));  // should return 5
 console.log(toNumber("111"));  // should return 7
-console.log(toNumber("1011")) // should return 11
+console.log(toNumber("1011"));// should return 11
