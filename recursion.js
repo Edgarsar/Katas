@@ -95,3 +95,14 @@ function reverseStr(str) {
 
 console.log(reverseStr("reverse string using recursion..."))
 
+
+//recursive factorial
+
+function factorial(n) {
+  if (n === 1) {
+    return n;
+  }
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5))
