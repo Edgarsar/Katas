@@ -19,9 +19,8 @@ Julie is never the same age as her brother.
 
 
 function age(x, y) {
-
   return Math.round(x / (y - 1)) + x;
 }
 
-console.log(age(-15, 0.25) == 5)
-console.log(age(6, 3) == 9)
+console.log(age(-15, 0.25) == 5);
+console.log(age(6, 3) == 9);
