@@ -40,5 +40,5 @@ function ascendDescend(length, minimum, maximum) {
 
 
 console.log(ascendDescend(5, 1, 3), "12321");
-  console.log(ascendDescend(14, 0, 2), "01210121012101");
-  console.log(ascendDescend(11, 5, 9), "56789876567");
+console.log(ascendDescend(14, 0, 2), "01210121012101");
+console.log(ascendDescend(11, 5, 9), "56789876567");
